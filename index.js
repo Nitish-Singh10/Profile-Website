@@ -14,3 +14,10 @@ menu.onclick = () => {
 window.onscroll = () => {
     nav.classList.remove('active');
 };
+
+
+const header1 = document.getElementById("new");
+
+window.addEventListener("scroll",function(){
+    header1.classList.toggle("sticky",window.scrollY > 1);
+});

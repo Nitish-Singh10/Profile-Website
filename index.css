@@ -259,7 +259,7 @@ header.sticky{
     margin-top: 4.2rem;
 }
 .row img{
-    height: auto;
+    height: 13rem;
     width: 100%;
     border-radius: 28px;
     margin-bottom: 1.4rem;
@@ -315,7 +315,7 @@ header.sticky{
     position: relative;
     width: 600px;
 }
-form input,form textarea{
+form input,form textarea,form select{
     width: 100%;
     padding: 20px;
     border: none;
@@ -329,6 +329,11 @@ form input,form textarea{
 form input::placeholder,form textarea::placeholder{
     color: var(--other-color);
     font-size: 15px;
+}
+label{
+    width: 100%;
+    display: block;
+    padding-bottom: 16px;
 }
 form .send-btn{
     display: inline-block;
@@ -424,6 +429,10 @@ form .send-btn:hover{
         --p-font: 15px;
     }
 }
+@media (max-width: 818px){
+    .row img{
+        height: auto;}
+}
 @media (max-width: 950px){
     :root{
         --h1-font: 3.5rem;
@@ -453,10 +462,17 @@ form .send-btn:hover{
     .navigation.active{
         right: 0;
     }
+
 }
 @media (max-width: 680px){
     .main-content p{
         width: 100%;
+    }
+}
+@media (max-width: 600px){
+    form .send-btn{
+        width: 40%;
+        padding: 11px 20px;
     }
 }
 @media (max-width: 470px){
@@ -472,5 +488,17 @@ form .send-btn:hover{
         border-radius: 50%;
         object-fit: cover;
         margin: 0 auto;
+    }
+}
+@media (max-width: 382px){
+    .services-content{
+        grid-template-columns: repeat(auto-fit,minmax(330px,auto));
+    }
+    .portfolio-content{
+        grid-template-columns: repeat(auto-fit,minmax(330px,auto));
+    }
+    form .send-btn{
+        width: 40%;
+        padding: 11px 12px;
     }
 }
