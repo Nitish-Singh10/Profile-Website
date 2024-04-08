@@ -65,6 +65,7 @@ span{
     color: var(--main-color);
 }
 section{
+    height: 100vh;
     padding: 100px 16% 90px;
 }
 .hero{
@@ -394,6 +395,9 @@ form .send-btn:hover{
         height: 90vh;
         background-position: center;
     }
+    section{
+        height: auto;
+    }
 }
 @media (max-width: 1290px){
     .box{
@@ -482,7 +486,7 @@ form .send-btn:hover{
     }
     .about-img img{
         text-align: center;
-        width: 100%;
+        width: 300px;
         height: 300px;
         max-width: 300px;
         border-radius: 50%;
